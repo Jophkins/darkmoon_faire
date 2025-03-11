@@ -1,11 +1,12 @@
-import {Container, Filters, ProductsGroupList, Title, TopBar} from "@/components/shared";
-import {ProductCard} from "@/components/shared/product-card";
+import {Container, Filters, PaymentCard, ProductsGroupList, Title, TopBar} from "@/components/shared";
 
 export default function Home() {
     return (
         <>
             <Container className="mt-8">
                 <Title text="Cool stuff" size="lg"/>
+
+                <PaymentCard />
 
             </Container>
 
@@ -20,7 +21,6 @@ export default function Home() {
 
                     <div className="flex-1">
                         <div className="flex flex-col gap-16">
-                            {/*<ProductCard id={0} name="Darkmoon Card: Sandstorm" price={870} imageUrl="https://wow.zamimg.com/images/wow/icons/large/inv_misc_ticket_tarot_crusade.jpg" />*/}
                             <ProductsGroupList title="Aces" items={[
                                 {
                                     "id": 1,
